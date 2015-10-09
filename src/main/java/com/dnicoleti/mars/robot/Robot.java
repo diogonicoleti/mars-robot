@@ -19,14 +19,14 @@ public class Robot implements Serializable {
     }
 
     /**
-     * <p>Receives a {@code String} which can contain the chars <b>L</b>, <b>R</b> and <b>M</b></p>
+     * <p>Receives a {@code String} that can contain the chars <b>L</b>, <b>R</b> and <b>M</b>.</p>
      *
-     * <p><b>L</b> and <b>R</b> makes the robot rotate on its axis 90 degrees left or right, respectively,
+     * <p><b>L</b> and <b>R</b> make the robot rotate on its axis 90 degrees to left or right, respectively,
      * without moving from its current position.<br/>
      * <b>M</b> makes the robot move one position forward.</p>
      *
-     * <p><em>Example:</em> If robot is in coordinate (0,0,N), the control <b>MML</b>
-     * will get it in coordinate (0,2,W)</p>
+     * <p><em>Example:</em> If robot is in coordinate (0,0,N), the control string <b>MML</b>
+     * will move it to coordinate (0,2,W)</p>
      *
      * @param controls the control string
      */

@@ -43,19 +43,23 @@ public class Coordinate implements Serializable {
     }
 
     /**
-     * Rotate the current direction 90 degrees to left
+     * Rotate the current <code>direction</code> 90 degrees to left
      */
     public void rotateLeft() {
         direction = direction.left();
     }
 
     /**
-     * Rotates the current direction 90 degrees to right
+     * Rotates the current <code>direction</code> 90 degrees to right
      */
     public void rotateRight() {
         direction = direction.right();
     }
 
+    /**
+     * Updates the position based on its <code>direction</code> and the boundaries of a given <code>ground</code>
+     * @param ground {@link Ground} to determine the boundaries
+     */
     public void moveForward(Ground ground) {
         switch (direction) {
             case NORTH:

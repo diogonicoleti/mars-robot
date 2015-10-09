@@ -13,14 +13,14 @@ public class Ground implements Serializable {
     }
 
     /**
-     * @return the ground's width
+     * @return the ground width
      */
     public int getWidth() {
         return width;
     }
 
     /**
-     * @return the ground's height
+     * @return the ground height
      */
     public int getHeight() {
         return height;
