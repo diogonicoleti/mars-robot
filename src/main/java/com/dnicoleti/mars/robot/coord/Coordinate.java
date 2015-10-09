@@ -6,26 +6,18 @@ import com.dnicoleti.mars.ground.Ground;
 
 public class Coordinate implements Serializable {
 
-    private Direction direction;
     private int x;
     private int y;
+    private Direction direction;
 
     public Coordinate() {
-        this(Direction.NORTH, 0, 0);
+        this(0, 0, Direction.NORTH);
     }
 
-    public Coordinate(Direction direction, int x, int y) {
-        this.direction = direction;
+    public Coordinate(int x, int y, Direction direction) {
         this.x = x;
         this.y = y;
-    }
-
-    /**
-     * Returns the current {@link Direction}
-     * @return the current direction
-     */
-    public Direction getDirection() {
-        return direction;
+        this.direction = direction;
     }
 
     /**
@@ -41,6 +33,15 @@ public class Coordinate implements Serializable {
     public int getY() {
         return y;
     }
+
+    /**
+     * Returns the current {@link Direction}
+     * @return the current direction
+     */
+    public Direction getDirection() {
+        return direction;
+    }
+
 
     /**
      * Rotate the current <code>direction</code> 90 degrees to left

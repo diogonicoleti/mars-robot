@@ -25,18 +25,18 @@ public class CoordinateMoveForwardTest {
     @Parameters
     public static Iterable<Coordinate[]> data() {
         return Arrays.asList(new Coordinate[][]{
-                {new Coordinate(Direction.NORTH, 0, 0), new Coordinate(Direction.NORTH, 0, 1)},
-                {new Coordinate(Direction.SOUTH, 0, 0), new Coordinate(Direction.SOUTH, 0, 0)},
-                {new Coordinate(Direction.EAST, 0, 0), new Coordinate(Direction.EAST, 1, 0)},
-                {new Coordinate(Direction.WEST, 0, 0), new Coordinate(Direction.WEST, 0, 0)},
-                {new Coordinate(Direction.NORTH, 3, 3), new Coordinate(Direction.NORTH, 3, 4)},
-                {new Coordinate(Direction.SOUTH, 3, 3), new Coordinate(Direction.SOUTH, 3, 2)},
-                {new Coordinate(Direction.EAST, 3, 3), new Coordinate(Direction.EAST, 4, 3)},
-                {new Coordinate(Direction.WEST, 3, 3), new Coordinate(Direction.WEST, 2, 3)},
-                {new Coordinate(Direction.NORTH, 5, 5), new Coordinate(Direction.NORTH, 5, 5)},
-                {new Coordinate(Direction.SOUTH, 5, 5), new Coordinate(Direction.SOUTH, 5, 4)},
-                {new Coordinate(Direction.EAST, 5, 5), new Coordinate(Direction.EAST, 5, 5)},
-                {new Coordinate(Direction.WEST, 5, 5), new Coordinate(Direction.WEST, 4, 5)}
+                {new Coordinate(0, 0, Direction.NORTH), new Coordinate(0, 1, Direction.NORTH)},
+                {new Coordinate(0, 0, Direction.SOUTH), new Coordinate(0, 0, Direction.SOUTH)},
+                {new Coordinate(0, 0, Direction.EAST), new Coordinate(1, 0, Direction.EAST)},
+                {new Coordinate(0, 0, Direction.WEST), new Coordinate(0, 0, Direction.WEST)},
+                {new Coordinate(3, 3, Direction.NORTH), new Coordinate(3, 4, Direction.NORTH)},
+                {new Coordinate(3, 3, Direction.SOUTH), new Coordinate(3, 2, Direction.SOUTH)},
+                {new Coordinate(3, 3, Direction.EAST), new Coordinate(4, 3, Direction.EAST)},
+                {new Coordinate(3, 3, Direction.WEST), new Coordinate(2, 3, Direction.WEST)},
+                {new Coordinate(5, 5, Direction.NORTH), new Coordinate(5, 5, Direction.NORTH)},
+                {new Coordinate(5, 5, Direction.SOUTH), new Coordinate(5, 4, Direction.SOUTH)},
+                {new Coordinate(5, 5, Direction.EAST), new Coordinate(5, 5, Direction.EAST)},
+                {new Coordinate(5, 5, Direction.WEST), new Coordinate(4, 5, Direction.WEST)}
         });
     }
 

@@ -34,18 +34,18 @@ public class RobotTest {
     @Parameters(name = "{0}")
     public static Iterable<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {"M", new Coordinate(Direction.NORTH, 0, 1)},
-                {"L", new Coordinate(Direction.WEST, 0, 0)},
-                {"R", new Coordinate(Direction.EAST, 0, 0)},
-                {"MML", new Coordinate(Direction.WEST, 0, 2)},
-                {"MMRMMRMMRMM", new Coordinate(Direction.WEST, 0, 0)},
-                {"RRMMLMM", new Coordinate(Direction.EAST, 2, 0)},
-                {"MMMMMMMLL", new Coordinate(Direction.SOUTH, 0, 4)},
-                {"RMMLMRMLM", new Coordinate(Direction.NORTH, 3, 2)},
-                {"MRMLMRMLMRMLMR", new Coordinate(Direction.EAST, 3, 4)},
-                {"RMMMMLMMM", new Coordinate(Direction.NORTH, 4, 3)},
-                {"MMMRMMRRL", new Coordinate(Direction.SOUTH, 2, 3)},
-                {"MMMMRMMMRMMRMR", new Coordinate(Direction.NORTH, 2, 2)}
+                {"M", new Coordinate(0, 1, Direction.NORTH)},
+                {"L", new Coordinate(0, 0, Direction.WEST)},
+                {"R", new Coordinate(0, 0, Direction.EAST)},
+                {"MML", new Coordinate(0, 2, Direction.WEST)},
+                {"MMRMMRMMRMM", new Coordinate(0, 0, Direction.WEST)},
+                {"RRMMLMM", new Coordinate(2, 0, Direction.EAST)},
+                {"MMMMMMMLL", new Coordinate(0, 4, Direction.SOUTH)},
+                {"RMMLMRMLM", new Coordinate(3, 2, Direction.NORTH)},
+                {"MRMLMRMLMRMLMR", new Coordinate(3, 4, Direction.EAST)},
+                {"RMMMMLMMM", new Coordinate(4, 3, Direction.NORTH)},
+                {"MMMRMMRRL", new Coordinate(2, 3, Direction.SOUTH)},
+                {"MMMMRMMMRMMRMR", new Coordinate(2, 2, Direction.NORTH)}
         });
     }
 

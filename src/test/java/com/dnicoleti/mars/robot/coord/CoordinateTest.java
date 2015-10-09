@@ -34,19 +34,19 @@ public class CoordinateTest {
     @Test
     public void testRotateLeft() throws Exception {
         coordinate.rotateLeft();
-        assertEquals(new Coordinate(Direction.WEST, 0, 0), coordinate);
+        assertEquals(new Coordinate(0, 0, Direction.WEST), coordinate);
     }
 
     @Test
     public void testRotateRight() throws Exception {
         coordinate.rotateRight();
-        assertEquals(new Coordinate(Direction.EAST, 0, 0), coordinate);
+        assertEquals(new Coordinate(0, 0, Direction.EAST), coordinate);
     }
 
     @Test
     public void testMoveForward() throws Exception {
         coordinate.moveForward(new Ground(5,5));
-        assertEquals(new Coordinate(Direction.NORTH, 0, 1), coordinate);
+        assertEquals(new Coordinate(0, 1, Direction.NORTH), coordinate);
     }
 
 }
