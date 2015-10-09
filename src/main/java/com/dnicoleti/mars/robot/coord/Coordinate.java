@@ -20,22 +20,38 @@ public class Coordinate implements Serializable {
         this.y = y;
     }
 
+    /**
+     * Returns the current {@link Direction}
+     * @return the current direction
+     */
     public Direction getDirection() {
         return direction;
     }
 
+    /**
+     * @return x-axis position
+     */
     public int getX() {
         return x;
     }
 
+    /**
+     * @return y-axis position
+     */
     public int getY() {
         return y;
     }
 
+    /**
+     * Rotate the current direction 90 degrees to left
+     */
     public void rotateLeft() {
         direction = direction.left();
     }
 
+    /**
+     * Rotates the current direction 90 degrees to right
+     */
     public void rotateRight() {
         direction = direction.right();
     }

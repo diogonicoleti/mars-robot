@@ -1,6 +1,5 @@
 package com.dnicoleti.mars.robot.coord;
 
-
 import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;

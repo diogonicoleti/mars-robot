@@ -12,10 +12,16 @@ public class Ground implements Serializable {
         this.height = height;
     }
 
+    /**
+     * @return the ground's width
+     */
     public int getWidth() {
         return width;
     }
 
+    /**
+     * @return the ground's height
+     */
     public int getHeight() {
         return height;
     }
