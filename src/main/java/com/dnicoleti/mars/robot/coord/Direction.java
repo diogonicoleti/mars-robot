@@ -1,4 +1,4 @@
-package com.dnicoleti.mars.robot;
+package com.dnicoleti.mars.robot.coord;
 
 public enum Direction {
     NORTH('N'), EAST('E'), SOUTH('S'), WEST('W');
